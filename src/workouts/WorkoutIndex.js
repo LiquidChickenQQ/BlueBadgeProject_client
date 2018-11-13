@@ -4,6 +4,7 @@ import WorkoutCreate from './WorkoutCreate';
 import WorkoutTable from './WorkoutTable';
 import WorkoutEdit from './WorkoutEdit';
 import "./Workout.css";
+import APIURL from'../helpers/enviornment';
 
 
 class WorkoutIndex extends Component{
@@ -20,7 +21,7 @@ class WorkoutIndex extends Component{
     }
 
     fetchWorkouts = () => {
-        fetch(`http://localhost:3000/api/log/`, { 
+        fetch(`${APIURL}/api/log/`, { 
           method: 'GET',
           headers: new Headers({
             'Content-Type': 'application/json',
@@ -33,7 +34,7 @@ class WorkoutIndex extends Component{
           })
       }
     workoutDelete = (event) => {
-        fetch(`http://localhost:3000/api/log/${event.target.id}`, {
+        fetch(`${APIURL}/api/log/${event.target.id}`, {
           method: 'DELETE',
           body: JSON.stringify({ log: { id: event.target.id } }),
           headers: new Headers({
@@ -46,7 +47,7 @@ class WorkoutIndex extends Component{
 
     
       workoutUpdate = (event, workout) => {
-        fetch(`http://localhost:3000/api/log/${workout.id}`, {
+        fetch(`${APIURL}/api/log/${workout.id}`, {
           method: 'PUT',
           body: JSON.stringify({ log: workout }),
           headers: new Headers({
