@@ -1,3 +1,5 @@
+
+
 import React, { Component } from 'react';
 import { Collapse,
     Navbar,
@@ -24,8 +26,8 @@ class SiteBar extends Component {
     render() {
         return (
             <div>
-                <Navbar color="faded" light expand="ms">
-                    <NavbarBrand href="/">HACCP Log</NavbarBrand>
+                <Navbar color="grey" light expand="ms">
+                    <NavbarBrand color="white" href="/">HACCP Plan Log Sheet</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>

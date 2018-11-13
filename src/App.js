@@ -3,6 +3,7 @@ import Auth from './auth/Auth';
 import SiteBar from './home/Navbar';
 import Splash from './home/Splash';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import "./App.css";
 
 
 
@@ -55,12 +56,14 @@ class App extends Component {
 
   render() {
     return (
+      <div className="App">
       <Router>
         <div>
           <SiteBar clickLogout={this.logout} />
           {this.protectedViews()}
         </div>
-      </Router>
+        </Router>
+        </div>
     );
   }
 }

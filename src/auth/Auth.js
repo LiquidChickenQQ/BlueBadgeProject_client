@@ -27,7 +27,7 @@ class Auth extends Component {
                     <Col md="12">
                         {this.state.showSignup === true ? <Signup setToken={this.props.setToken} /> : <Login setToken={this.props.setToken} />}
                         <br></br>
-                        <Button type="button" onClick={this.handleClick}>{this.state.showSignup === true ? <h6>Sign In Here</h6> : <h6>Sign Up Here</h6>}</Button>
+                        <Button className="button" type="button" onClick={this.handleClick}>{this.state.showSignup === true ? <p>Login Here</p> : <p>Sign Up Here</p>}</Button>
                     </Col>
                 </Row>
             </Container>

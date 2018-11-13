@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import WorkoutCreate from './WorkoutCreate';
 import WorkoutTable from './WorkoutTable';
 import WorkoutEdit from './WorkoutEdit';
+import "./Workout.css";
 
 
 class WorkoutIndex extends Component{
@@ -19,7 +20,7 @@ class WorkoutIndex extends Component{
     }
 
     fetchWorkouts = () => {
-        fetch("http://localhost:3000/api/log", {
+        fetch(`http://localhost:3000/api/log/`, { 
           method: 'GET',
           headers: new Headers({
             'Content-Type': 'application/json',

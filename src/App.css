@@ -1,9 +1,22 @@
+
+
 .App {
-  text-align: center;
+  padding: 0%;
+  margin:0%;
+  height: 970px;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  /* text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: #373a41b9;
+  border-radius: 0.4em; */
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #272b33;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,6 +24,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 0.4em;
 }
 
 .App-link {

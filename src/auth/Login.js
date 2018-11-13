@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import "./Auth.css"
 
 class Login extends Component {
     
@@ -47,7 +48,7 @@ class Login extends Component {
                         <Label for="password">Password</Label>
                         <Input id="li_password" type="password" name="password" placeholder="enter password" onChange={this.handleChange} />
                     </FormGroup>
-                    <Button type="submit"> Submit </Button>
+                    <Button className="button" type="submit"> Submit </Button>
                 </Form>
             </div>
         )
