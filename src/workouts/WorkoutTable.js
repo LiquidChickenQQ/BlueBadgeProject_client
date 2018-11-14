@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Button } from 'reactstrap';
+import { Table } from 'reactstrap';
 import "./Workout.css";
 
 const WorkoutTable = (props) => {
@@ -30,13 +30,13 @@ const WorkoutTable = (props) => {
                                     <th scope="row">{workout.id}</th>
                                     <td>{workout.results}</td>
                                     <td>{workout.definition}</td>
-                                    <td>{workout.description}</td>
                                     <td>{workout.thawing}</td>
                                     <td>{workout.marinade}</td>
+                                    <td>{workout.description}</td>
                                     <td>{workout.cooling}</td>
                                     <td>
-                                        <Button id={workout.id} onClick={props.delete} color="danger">Delete</Button>
-                    <Button id={workout.id} onClick={e => props.update(e, workout)} color="warning">Update</Button>
+                                        <button className="button-delete" id={workout.id} onClick={props.delete} color="red">Delete</button>
+                    <button className="button-update" id={workout.id} onClick={e => props.update(e, workout)} color="grey">Update</button>
                                     </td>
                                 </tr>
                             )

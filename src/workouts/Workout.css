@@ -3,4 +3,34 @@
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+.button-update {
+    height: 2.25em;
+    width: 4em;
+    text-align: center;
+    border-color: rgba(0, 128, 0, 1);
+    border-radius: 2px;
+    border-width: 2px;
+    font-family: 'Roboto', sans-serif;
+    background-color :rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.button-update:hover {
+    background-color:rgba(0, 128, 0, 0.6);
+}
+.button-delete {
+    height: 2.25em;
+    width: 4em;
+    text-align: center;
+    border-color: red;
+    border-radius: 2px;
+    border-width: 2px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: white;
+}
+.button-delete:hover {
+    background-color:rgba(255, 0, 0, 0.6);
 }

@@ -10,10 +10,10 @@ class WorkoutCreate extends Component {
         this.state = {
             id: '',
             results: '',
-            description: '',
+            marinade: '',
             definition: '',
             thawing: '',
-            marinade: '',
+            description: '',
             cooling:'',
         };
     }
@@ -41,9 +41,9 @@ class WorkoutCreate extends Component {
                     this.setState({
                         id: '', 
                         results: '',
-                        description: '',
-                        definition: '',
                         thawing: '',
+                        definition: '',
+                        description: '',
                         marinade: '',
                         cooling: '',
                     })
