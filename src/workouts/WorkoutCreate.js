@@ -14,7 +14,8 @@ class WorkoutCreate extends Component {
             definition: '',
             thawing: '',
             description: '',
-            cooling:'',
+            cooling: '',
+            ph_test: '',
         };
     }
 
@@ -46,6 +47,7 @@ class WorkoutCreate extends Component {
                         description: '',
                         marinade: '',
                         cooling: '',
+                        ph_test: '',
                     })
             })
 }
@@ -84,6 +86,11 @@ render() {
                 <FormGroup>
                     <Label for="cooling">Cooling</Label>
                     <Input type="text" name="cooling" id="cooling" value={this.state.cooling} onChange={this.handleChange} placeholder="Temp, Exposure time, Initials">
+                    </Input>
+                </FormGroup>
+                <FormGroup>
+                    <Label for="ph_test">pH Test</Label>
+                    <Input type="text" name="ph_test" id="ph_test" value={this.state.ph_test} onChange={this.handleChange} placeholder="pH Test Results">
                     </Input>
                 </FormGroup>
                 <Button type="submit" color="primary">Submit</Button>

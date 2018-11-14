@@ -15,6 +15,7 @@ class WorkoutEdit extends React.Component {
             thawing: '',
             marinade: '',
             cooling: '',
+            ph_test: '',
         };
     }
 
@@ -27,6 +28,7 @@ class WorkoutEdit extends React.Component {
             thawing: this.props.workout.thawing,
             marinade: this.props.workout.marinade,
             cooling: this.props.workout.cooling,
+            ph_test: this.props.workout.ph_test,
         })
     }
 
@@ -77,6 +79,11 @@ class WorkoutEdit extends React.Component {
                     <Input type="text" name="cooling" id="cooling" value={this.state.cooling} onChange={this.handleChange} placeholder="Temp, Exposure time, Initials">
                     </Input>
                 </FormGroup>
+                <FormGroup>
+                    <Label for="ph_test">pH Test</Label>
+                    <Input type="text" name="ph_test" id="ph_test" value={this.state.ph_test} onChange={this.handleChange} placeholder="pH Test Results">
+                    </Input>
+                </FormGroup>            
                             <Button type="submit" color="primary"> Submit </Button>
                         </Form>
                     </ModalBody>

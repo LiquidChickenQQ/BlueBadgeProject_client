@@ -6,7 +6,7 @@ const WorkoutTable = (props) => {
 
     return (
         <div>
-            <h3>HACCP Production Log</h3>
+            <p className="log_heading">HACCP Production Log</p>
             <hr />
             <Table striped>
                 <thead>
@@ -18,6 +18,7 @@ const WorkoutTable = (props) => {
                         <th>Marinade</th>
                         <th>Smoking</th>
                         <th>Cooling</th>
+                        <th>pH Test</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -34,6 +35,7 @@ const WorkoutTable = (props) => {
                                     <td>{workout.marinade}</td>
                                     <td>{workout.description}</td>
                                     <td>{workout.cooling}</td>
+                                    <td>{workout.ph_test}</td>
                                     <td>
                                         <button className="button-delete" id={workout.id} onClick={props.delete} color="red">Delete</button>
                     <button className="button-update" id={workout.id} onClick={e => props.update(e, workout)} color="grey">Update</button>

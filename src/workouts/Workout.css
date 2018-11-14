@@ -4,7 +4,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     padding: 1em;
     border-radius: 10px;
-    text-align: center;
+
 }
 .button-update {
     height: 2.25em;
@@ -23,7 +23,6 @@
 .button-delete {
     height: 2.25em;
     width: 4em;
-    text-align: center;
     border-color: red;
     border-radius: 2px;
     border-width: 2px;
@@ -33,4 +32,9 @@
 }
 .button-delete:hover {
     background-color:rgba(255, 0, 0, 0.6);
+}
+.log_heading{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align: center;
 }
