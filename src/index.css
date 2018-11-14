@@ -3,8 +3,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-image: url("https://images.pexels.com/photos/1105386/pexels-photo-1105386.jpeg?auto=compress&cs=tinysrgb&h=350");
+  background-image: url("https://images.pexels.com/photos/1106422/pexels-photo-1106422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
+  background-attachment: fixed;
   /* background-color: #16121254;   */
   color: white;
   border-radius: 0.4em;
