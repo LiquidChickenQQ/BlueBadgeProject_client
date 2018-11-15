@@ -64,40 +64,40 @@ render() {
             <Form onSubmit={this.handleSubmit} >
                 <FormGroup>
                     <Label for="result">Batch Number</Label>
-                    <Input id="results" type="text" name="results" value={this.state.results} placeholder="Batch #" onChange={this.handleChange} />
+                    <Input id="results" type="text" name="results" value={this.state.results} placeholder="Batch #" onChange={this.handleChange} required/>
                 </FormGroup>
                 <FormGroup>
                     <Label for="def">Expiration Date</Label>
-                    <Input type="text" name="definition" id="definition" value={this.state.definition} onChange={this.handleChange} placeholder="Date">
+                    <Input type="text" name="definition" id="definition" value={this.state.definition} onChange={this.handleChange} placeholder="Date" required>
                     </Input>
                 </FormGroup>
                 <FormGroup>
                     <Label for="thawing">Thawing</Label>
-                    <Input type="text" name="thawing" id="thawing" value={this.state.thawing} onChange={this.handleChange} placeholder="Date Initials">
+                    <Input type="text" name="thawing" id="thawing" value={this.state.thawing} onChange={this.handleChange} placeholder="Date Initials" required>
                     </Input>
                 </FormGroup>
                 <FormGroup>
                     <Label for="marinade">Marinade</Label>
-                    <Input type="text" name="marinade" id="marinade" value={this.state.marinade} onChange={this.handleChange} placeholder="Date Initials">
+                    <Input type="text" name="marinade" id="marinade" value={this.state.marinade} onChange={this.handleChange} placeholder="Date Initials" required>
                     </Input>
                 </FormGroup>
                 <FormGroup>
                     <Label for="description">Smoking</Label>
-                    <Input id="description" type="text" name="description" value={this.state.description} placeholder="Date, Time, Initials" onChange={this.handleChange} />
+                    <Input id="description" type="text" name="description" value={this.state.description} placeholder="Date, Time, Initials" onChange={this.handleChange} required/>
                 </FormGroup>
                 <FormGroup>
                     <Label for="cooling">Cooling</Label>
-                    <Input type="text" name="cooling" id="cooling" value={this.state.cooling} onChange={this.handleChange} placeholder="Temp, Exposure time, Initials">
+                    <Input type="text" name="cooling" id="cooling" value={this.state.cooling} onChange={this.handleChange} placeholder="Temp, Exposure time, Initials" required>
                     </Input>
                 </FormGroup>
                 <FormGroup>
                     <Label for="packaging">Packaging</Label>
-                    <Input type="text" name="packaging" id="packaging" value={this.state.packaging} onChange={this.handleChange} placeholder="Temp, Exposure time, Inintials">
+                    <Input type="text" name="packaging" id="packaging" value={this.state.packaging} onChange={this.handleChange} placeholder="Temp, Exposure time, Inintials" required>
                     </Input>
                 </FormGroup>
                 <FormGroup>
                     <Label for="ph_test">pH Test</Label>
-                    <Input type="text" name="ph_test" id="ph_test" value={this.state.ph_test} onChange={this.handleChange} placeholder="pH Test Results">
+                    <Input type="text" name="ph_test" id="ph_test" value={this.state.ph_test} onChange={this.handleChange} placeholder="pH Test Results" required>
                     </Input>
                 </FormGroup>
                 <Button type="submit" color="primary">Submit</Button>

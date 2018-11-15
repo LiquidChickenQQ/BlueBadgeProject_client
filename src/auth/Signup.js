@@ -28,7 +28,6 @@ class Signup extends Component {
             body: JSON.stringify({ user: this.state })
         }).then(response => response.json())
         .then((data) => {
-            console.log(data);
             this.props.setToken(data.sessionToken)
         }); 
     }
@@ -43,11 +42,11 @@ class Signup extends Component {
                 <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
                         <Label for="username">Username</Label>
-                        <Input id="su_sername" typr="text" name="username" placeholder="enter username" onChange={this.handleChange} />
+                        <Input id="su_sername" typr="text" name="username" placeholder="enter username" onChange={this.handleChange} required/>
                     </FormGroup>
                     <FormGroup>
                         <Label for="password">Password</Label>
-                        <Input id="su_password" type="password" name="password" placeholder="enter password" onChange={this.handleChange}/>
+                        <Input id="su_password" type="password" name="password" placeholder="enter password" onChange={this.handleChange} required/>
                     </FormGroup>
 
                     <button className="button-submit" type="submit"> Submit </button>
