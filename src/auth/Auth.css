@@ -13,11 +13,32 @@
 
     
 }
-.button {
+.button-submit {
     padding: .4em;
     height: 2.5em;
+    border-color: teal;
+    background-color:rgba(0, 128, 128, 0.5);
+    color:white;
+    border-radius: 4px;
+    width: 100%;
+}
+.button-submit:hover {
+    background-color: teal
 }
 
 .login-col {
     border-left: 1px solid black;
+}
+.button {
+    padding: .4em;
+    height: 2.5em;
+    border-color:white;
+    color:white;
+    border-radius: 4px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.192);
+}
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.76);
+    color:black;
 }

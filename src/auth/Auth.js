@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col, } from "reactstrap";
 import Signup from "./Signup";
 import Login from "./Login";
 import "./Auth.css"
@@ -27,7 +27,7 @@ class Auth extends Component {
                     <Col md="12">
                         {this.state.showSignup === true ? <Signup setToken={this.props.setToken} /> : <Login setToken={this.props.setToken} />}
                         <br></br>
-                        <Button className="button" type="button" onClick={this.handleClick}>{this.state.showSignup === true ? <p>Login Here</p> : <p>Sign Up Here</p>}</Button>
+                        <button className="button" type="button" onClick={this.handleClick}>{this.state.showSignup === true ? <p>Go To Login</p> : <p>Go To SignUp</p>}</button>
                     </Col>
                 </Row>
             </Container>

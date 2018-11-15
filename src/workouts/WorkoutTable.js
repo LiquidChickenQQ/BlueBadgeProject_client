@@ -12,12 +12,13 @@ const WorkoutTable = (props) => {
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Batch Number</th>
+                        <th>Batch #</th>
                         <th>Experation Date</th>
                         <th>Thawing</th>
                         <th>Marinade</th>
                         <th>Smoking</th>
                         <th>Cooling</th>
+                        <th>Packaging</th>
                         <th>pH Test</th>
                         <th></th>
                     </tr>
@@ -35,6 +36,7 @@ const WorkoutTable = (props) => {
                                     <td>{workout.marinade}</td>
                                     <td>{workout.description}</td>
                                     <td>{workout.cooling}</td>
+                                    <td>{workout.packaging}</td>
                                     <td>{workout.ph_test}</td>
                                     <td>
                                         <button className="button-delete" id={workout.id} onClick={props.delete} color="red">Delete</button>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { Form, FormGroup, Label, Input, } from 'reactstrap';
 import "./Auth.css";
 import APIURL from'../helpers/enviornment';
 
@@ -39,7 +39,7 @@ class Login extends Component {
         return (
             <div>
                 <h1>Login</h1>
-                <h6>Login to the best FDA HACCP log in the classroom!</h6>
+                <h6>Login to the best friggin' FDA HACCP log in the classroom!</h6>
                 <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
                         <Label for="username">Username</Label>
@@ -49,7 +49,7 @@ class Login extends Component {
                         <Label for="password">Password</Label>
                         <Input id="li_password" type="password" name="password" placeholder="enter password" onChange={this.handleChange} />
                     </FormGroup>
-                    <Button className="button" type="submit"> Submit </Button>
+                    <button className="button-submit" type="submit"> Submit </button>
                 </Form>
             </div>
         )

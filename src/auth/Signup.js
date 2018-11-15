@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { Form, FormGroup, Label, Input, } from 'reactstrap';
 import "./Auth.css";
 import APIURL from'../helpers/enviornment';
 
@@ -50,7 +50,7 @@ class Signup extends Component {
                         <Input id="su_password" type="password" name="password" placeholder="enter password" onChange={this.handleChange}/>
                     </FormGroup>
 
-                    <Button className="button" type="submit">Submit</Button>
+                    <button className="button-submit" type="submit"> Submit </button>
                 </Form>
             </div>
         )

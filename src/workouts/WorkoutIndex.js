@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 import WorkoutCreate from './WorkoutCreate';
 import WorkoutTable from './WorkoutTable';
 import WorkoutEdit from './WorkoutEdit';
