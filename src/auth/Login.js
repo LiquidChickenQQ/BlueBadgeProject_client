@@ -8,7 +8,7 @@ class Login extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            username: '',
+            email: '',
             password: ''
         };
     }
@@ -29,7 +29,6 @@ class Login extends Component {
         }).then(
             (response) => response.json()
         ).then((data) => {
-            console.log(data.sessionToken);
             this.props.setToken(data.sessionToken)
         });
         event.preventDefault()
@@ -42,8 +41,8 @@ class Login extends Component {
                 <h6>Login to the best friggin' FDA HACCP log in the classroom!</h6>
                 <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
-                        <Label for="username">Username</Label>
-                        <Input id="li_username" type="username" name="username" placeholder="enter username" onChange={this.handleChange} required/>
+                        <Label for="email">Username</Label>
+                        <Input id="li_email" type="email" name="email" placeholder="enter email" onChange={this.handleChange} required/>
                     </FormGroup>
                     <FormGroup>
                         <Label for="password">Password</Label>
