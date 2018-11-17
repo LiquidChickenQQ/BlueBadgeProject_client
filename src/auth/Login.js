@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, FormGroup, Label, Input, } from 'reactstrap';
+import { Form, Label, Input, FormGroup } from 'reactstrap';
 import "./Auth.css";
 import APIURL from'../helpers/enviornment';
 
@@ -41,7 +41,7 @@ class Login extends Component {
                 <h6>Login to the best friggin' FDA HACCP log in the classroom!</h6>
                 <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
-                        <Label for="email">Username</Label>
+                        <Label for="email">Email</Label>
                         <Input id="li_email" type="email" name="email" placeholder="enter email" onChange={this.handleChange} required/>
                     </FormGroup>
                     <FormGroup>
